@@ -1,0 +1,56 @@
++ Controller làm việc với 'View' và 'Model'
++ Model làm việc với 'Database'
++ View làm việc với 'Giao diện'
+
+Quy tắc đặt tên:
+    - Controller
+    - Method
+    - View
+
+// Nội dung bữa học
+
+1: Tạo controller
+2: Cách khởi tạo và gọi model
+    b1: Khởi tạo tên model ( tên model trùng với tên class của model đó )
+    b2: Gọi model đó trong __construct
+3: Cách khởi tạo và gọi view
+
+
+// check list module user -> login user
+    b1: Làm giao diện
+    b2: validation form ( chuẩn hóa dữ liệu form )
+        + Xử dụng thuật toán đặt cờ hiệu
+        + Sử dụng hàm isset() để kiễm tra form có vừa nhấn đăng nhập hay không
+            . isset() :
+            . empty() :
+                -> Tìm hiểu sự khác nhau giữ isset() và empty()
+    b3: Xử lí đăng nhập
+        + Kiểm tra biến error
+        + Sử dụng 'SESSION' và 'COOKIE' để lưu đăng nhập
+            . So sánh SESSION và COOKIE ( sự khác nhay giữ session và cookie )
+            . Khi nào sử dụng SESSION và khi nào sử dụng COOKIE
+    b4: Xử lý đăng nhập không hợp lệ
+
+// + tồn tại
+// + có giá trị
+isset() : tồn tại
+empty() : tồn tại và có giá trị => true
+
+
+// Tạo table có tên là tbl_user ( admin )
+    + user_id
+    + user_fullname
+    + user_username
+    + user_password
+    + user_gender
+    + user_address
+    + user_avatar
+    + user_birthday
+    + user_phone
+    + user_email
+    + user_title ( chức vụ của user )
+    + user_is_active ( Tài khoảng được active chưa )
+    + user_is_disable ( tài khoảng có bị vô hiện hóa không )
+    + user_numPassword_attempts ( Số lần thử mật khẩu )
+    + user_time_login ( Thời gian đăng nhập )
+    + user_token ( Lấy lại password sử dụng token -> chữ ký )

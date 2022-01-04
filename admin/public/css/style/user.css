@@ -1,0 +1,40 @@
+#user-app {
+    background-color: burlywood;
+}
+
+#user-app .user-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+.form-control {
+    width: 300px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 10px;
+}
+.form-button {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #cccc;
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.form-button:hover {
+    background-color: cadetblue ;
+    color: #fff;
+}
